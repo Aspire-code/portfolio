@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+      <nav>
+        <div class="nav-container">
+        <div class="burger" id="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="close" id="close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        </div>
+        <ul class="nav-links" id="navlinks">
+            <div class="logo">
+                <img src="./Screenshot 2025-09-18 161910.png" alt="logo">
+
+            </div>
+            <li><a href="Home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+</header>
+<main>
+    <section id="welcome">
+        <div class="intro">
+            <h1>Welcome to my portfolio</h1>
+            <p class="caption">Where functionality meets visual clarity</p><br><br>
+            <h2>Introduction</h2><br>
+            <p>I am John Giteri Mathenge,<br><br>an IT specialist and web developer with skills in designing,<br><br> developing, and managing efficient digital solutions.<br><br> My portfolio highlights projects in web development,<br><br> database management, and IT support, showcasing both technical expertise and problem-solving <br><br> I am passionate about creating user-friendly systems<br><br> and leveraging technology to deliver practical and innovative solutions.</p> <br><br>
+            <h3>contacts</h3>
+            <p>Phone number +254 793698775 <br><br>Email address: mathengejohn401@gmail.com</p>
+           
+        </div>
+        <div class="hero-image">
+            <img src="./WhatsApp Image 2025-09-18 at 12.07.49.jpeg" alt="port-image"
+        </div>
+        
+       
+    </section>
+    
+</main>
+<script>
+    const burger = document.getElementById('burger')
+     const close = document.getElementById('close')
+      const navlinks = document.getElementById('navlinks')
+
+      burger.addEventListener('click', () => {
+        navlinks.classList.add('show')
+        burger.style.display = 'none'
+        close.style.display = 'block'
+      })
+      close.addEventListener('click', () => {
+         navlinks.classList.remove('show')
+        burger.style.display = 'block'
+        close.style.display = 'none'
+
+      })
+      close.style.display = 'none'
+</script>
+    
+</body>
+</html>
